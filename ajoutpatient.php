@@ -72,9 +72,9 @@ if (isset($_POST['Valider'])) {
     <nav id="nav">
         <ul>
             <li class="current"><a href="menu.html">Menu</a></li>
-            <li><a href="médecin.php">Médecin</a></li>
-            <li><a href="patient.php">Patient</a></li>
-            <li><a href="rdv.php">Prise de RDV</a></li>
+            <li><a href="médecin.tpl.html">Médecin</a></li>
+            <li><a href="patient.tpl.html">Patient</a></li>
+            <li><a href="rdv.tpl.html">Prise de RDV</a></li>
         </ul>
     </nav>
 
