@@ -35,10 +35,51 @@ if (isset($_POST['Valider'])) {
         echo 'Erreur lors de l\'enregistrement des données : ' . $requete->errorInfo()[2];
     }
 }
+
 ?>
 
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CICORELLA - HAMMADOU</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body class="homepage is-preload">
+<div id="page-wrapper">
+    <!-- Header -->
+    <header id="header">
+        <div class="logo container">
+            <div>
+                <h1>
+                    <a href="menu.html" id="logo">
+                        <h1>Bienvenue sur le site du Cabinet médical CICORELLA - HAMMADOU </h1>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li class="current"><a href="menu.html">Menu</a></li>
+            <li><a href="médecin.tpl.html">Médecin</a></li>
+            <li><a href="patient.tpl.html">Patient</a></li>
+            <li><a href="rdv.tpl.htmlm">Prise de RDV</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <!-- Introduction avant d'afficher la liste -->
+<section align="center" style="background-color: white;>
+					<div class="content" style="color: black;">
+</div>
+				</section>
+
 <!-- ______________________ affichage du formulaire ____________________________ --> 
-<form action="ajoutmédecin.php" method="POST">
+ <form action="ajoutmédecin.php" method="POST"> 
     <fieldset>
         <h2> Veuillez remplir ce formulaire - médecin </h2>
         <p> Nom du medecin: <input type="text" name="Nom_med" size="40"/> </p>
@@ -54,54 +95,7 @@ if (isset($_POST['Valider'])) {
     </fieldset>
 </form>
 
-<!-- ____________________ Corps HTML ___________________  --> 
 
-<!DOCTYPE HTML>
-<!--
-	TXT by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title> CICORELLA - HAMMADOU</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+</body>
+</html>
 
-			<!-- Header -->
-				<header id="header">
-					<div class="logo container">
-						<div>
-							<h1><a href="menu.html" id="logo"> <h1> Bienvenue sur le site du Cabinet médical CICORELLA - TRUC </h1>
- </a></h1>
-						</div>
-					</div>
-				</header>
-
-			<!-- Nav -->
-				<nav id="nav">
-				<ul>
-           			 <li class="current"><a href="menu.html">Menu</a></li>
-           			 <li><a href="médecin.tpl.html">Médecin</a></li>
-           			 <li><a href="patient.tpl.html">Patient</a></li>
-            		<li><a href="rdv.tpl.html">Prise de RDV</a></li>
-        		</ul>
-				</nav>
-
-
-        
-
-         	<!-- Banner -->
-				<section id="banner">
-					<div class="content">
-						<h2> Ajouter un médecin </h2>
-						
-					</div>
-				</section>
-			
-
-</html> 

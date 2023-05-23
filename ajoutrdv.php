@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div>
                 <h1>
                     <a href="menu.html" id="logo">
-                        <h1>Bienvenue sur le site du Cabinet médical CICORELLA - TRUC</h1>
+                        <h1>Bienvenue sur le site du Cabinet médical CICORELLA - HAMMADOU </h1>
                     </a>
                 </h1>
             </div>
@@ -53,20 +53,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Nav -->
     <nav id="nav">
-    <ul>
-            <li class="current"><a href="menu.html">Menu</a></li>
-            <li><a href="médecin.tpl.html">Médecin</a></li>
-            <li><a href="patient.tpl.html">Patient</a></li>
-            <li><a href="rdv.tpl.html">Prise de RDV</a></li>
-        </ul>
-    </nav>
+				<ul>
+           			 <li class="current"><a href="menu.html">Menu</a></li>
+           			 <li><a href="médecin.tpl.html">Médecins</a></li>
+           			 <li><a href="patient.tpl.html">Patients</a></li>
+            		<li><a href="rdv.tpl.html">Consultations </a></li>
+        		</ul>
+				</nav>
+
 
     <!-- Banner -->
-    <section id="banner">
-        <div class="content">
-            <h2>Ajouter une consultation</h2>
-        </div>
-    </section>
+    <!-- Introduction avant d'afficher la liste -->
+<section align="center" style="background-color: white;>
+					<div class="content" style="color: black;">
+</div>
+				</section>
+
+   
 
     <form action="ajoutrdv.php" method="POST">
         <fieldset>

@@ -2535,6 +2535,8 @@ input, select, textarea {
 					color: #fff;
 					border-color: #616763;
 				}
+				
+				
 
 /* Main */
 
@@ -3104,4 +3106,36 @@ input, select, textarea {
 				font-size: 10pt;
 			}
 
-	}
+	}table {
+		margin: 0 auto; /* Pour centrer le tableau horizontalement */
+		text-align: center; /* Pour centrer le contenu du tableau */
+	  }
+	  
+	  th, td {
+		padding: 10px; /* Espacement interne pour le contenu des cellules */
+	  }
+	  
+	  thead {
+		background-color: #f2f2f2; /* Couleur de fond pour l'en-tête du tableau */
+	  }
+	  
+	  tbody tr:nth-child(even) {
+		background-color: #e6e6e6; /* Couleur de fond pour les lignes paires du corps du tableau */
+	  }
+	  
+	  tbody tr:hover {
+		background-color: #dcdcdc; /* Couleur de fond au survol des lignes du corps du tableau */
+	  }
+	  
+	  .actions a {
+		margin: 0 5px; /* Espacement des liens d'action dans la cellule "Actions" */
+	  }
+
+	  thead {
+		background-color: #f2f2f2; /* Couleur de fond pour l'en-tête du tableau */
+	  }
+	  
+	  th {
+		padding: 10px; /* Espacement interne pour le contenu des cellules de l'en-tête */
+		font-weight: bold; /* Police en gras pour l'en-tête */
+	  }

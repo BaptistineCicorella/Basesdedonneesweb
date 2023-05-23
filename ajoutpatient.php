@@ -6,6 +6,7 @@ include("connexion.php");
 // Vérification si le formulaire est soumis
 if (isset($_POST['Valider'])) {
     // Récupération des données du formulaire
+    
     $nompat = $_POST['nom_pat'];
     $prenompat = $_POST['prenom_pat'];
     $adressepat = $_POST['adresse_pat'];
@@ -36,13 +37,17 @@ if (isset($_POST['Valider'])) {
     $requete->bindParam(':GS_pat', $gs_pat);
     $requete->bindParam(':Date_Crea_dossier', $datedossier);
 
-    // Exécution de la requête
-    if ($requete->execute()) {
-        echo 'Données enregistrées !';
-    } else {
-        echo 'Erreur lors de l\'enregistrement des données : ' . $requete->errorInfo()[2];
-    }
+ 
+
+
+//Validation
+if ($requete->execute()) {
+    echo 'Données enregistrées !';
+} else {
+    echo 'Erreur lors de l\'enregistrement des données : ' . $requete->errorInfo()[2];
 }
+} 
+
 ?>
 
 <!DOCTYPE HTML>
@@ -71,24 +76,19 @@ if (isset($_POST['Valider'])) {
     <!-- Nav -->
     <nav id="nav">
         <ul>
-            <li class="current"><a href="menu.html">Menu</a></li>
-            <li><a href="médecin.tpl.html">Médecin</a></li>
-            <li><a href="patient.tpl.html">Patient</a></li>
-            <li><a href="rdv.tpl.html">Prise de RDV</a></li>
+            <li class="current"><a href="menu.html">Menu </a></li>
+            <li><a href="médecin.tpl.html">Médecins </a></li>
+            <li><a href="patient.tpl.html">Patients </a></li>
+            <li><a href="rdv.tpl.html"> Consultations </a></li>
         </ul>
     </nav>
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="content">
-            <h2>Ajouter un patient</h2>
-        </div>
-    </section>
+  
 
     <form action="ajoutpatient.php" method="POST">
         <fieldset>
             <h2>Veuillez remplir le formulaire - patient</h2>
-            <p>Nom : <input type="text" name="nom_pat" size="40"/></p>
+            <p>Nom : <input type="text" name="nom_pat" size="40" /> </p>
             <p>Prénom : <input type="text" name="prenom_pat" size="40"/></p>
             <p>Adresse : <input type="text" name="adresse_pat" size="40"/></p>
             <p>Téléphone du patient : <input type="text" name="tel_pat" size="40"></p>
